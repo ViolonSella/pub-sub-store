@@ -5,6 +5,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '.env') })
 
 async function processMessage(msg) {
     const deliveryData = JSON.parse(msg.content)
+    console.log(deliveryData)
     try {
         if(deliveryData.address && deliveryData.address.zipCode) {
             console.log(`✔ SUCCESS, SHIPPING AUTHORIZED, SEND TO:`)
