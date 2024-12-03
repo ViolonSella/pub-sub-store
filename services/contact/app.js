@@ -3,7 +3,6 @@ const nodemailer = require('nodemailer')
 const path = require('path')
 const fs = require('fs')
 
-
 require('dotenv').config({ path: path.resolve(__dirname, '.env') })
 
 async function processMessage(msg) {
